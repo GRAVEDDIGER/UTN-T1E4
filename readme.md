@@ -11,3 +11,33 @@ Resolver de dos maneras:
 
 * Usar una función CONTAR que debe ser llamada con la letra 'a' como argumento.
 * Usar una función CONTAR que sólo sabe contar caracteres 'a' en una cadena.
+
+## Resolucion
+
+### Funciones
+
+#### input.h
+
+```c++
+void getData(char *entrada, const char salida[], int largo)
+{
+    cout << salida << endl;
+    cin.getline(entrada, largo);
+}
+```
+
+#### cadenas.h
+```c++
+int contar(char *texto, int longitud, const char letra)
+{
+    int counter;
+    for (int i = 0; i < longitud; i++)
+    {
+        if (texto[i] == letra)
+        {
+            counter++;
+        }
+    }
+    return counter;
+}
+```
