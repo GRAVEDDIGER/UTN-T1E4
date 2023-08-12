@@ -1,4 +1,4 @@
-int contar(char *texto, int longitud, char letra)
+int contar(char *texto, int longitud, const char letra)
 {
     int counter;
     for (int i = 0; i < longitud; i++)
