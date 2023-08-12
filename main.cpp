@@ -4,8 +4,8 @@ using namespace std;
 
 int main()
 {
-    char texto[15];
-    getData(texto, "Ingrese Nombre");
+    char texto[32];
+    getData(texto, "Ingrese Nombre", 32);
     cout << texto << endl;
     system("pause");
     return 0;

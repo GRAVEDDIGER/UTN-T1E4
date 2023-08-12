@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-void getData(char *cadena, char texto[])
+void getData(char *entrada, const char salida[], int largo)
 {
-    cout << texto << endl;
-    cin >> *cadena;
+    cout << salida << endl;
+    cin.getline(entrada, largo);
 }
